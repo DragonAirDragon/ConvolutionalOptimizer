@@ -1,0 +1,90 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text diff=python
+*.pyw text diff=python
+*.pyx text diff=python
+*.pxd text diff=python
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.ps1 text eol=crlf
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+*.rst text
+LICENSE text
+AUTHORS text
+
+# Configuration
+*.json text
+*.yaml text
+*.yml text
+*.toml text
+*.ini text
+*.cfg text
+*.conf text
+
+# Requirements
+*.txt text
+requirements*.txt text
+
+# Notebooks
+*.ipynb text
+
+# Images (binary)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.eps binary
+*.pdf binary
+
+# Models and data (binary)
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.h5 binary
+*.hdf5 binary
+*.pkl binary
+*.pickle binary
+*.npy binary
+*.npz binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.rar binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Windows specific
+*.bat text eol=crlf
+
+# Diff settings for common file types
+*.css text diff=css
+*.html text diff=html
+*.xml text
+
+# Export-ignore (не включать в архивы)
+.gitattributes export-ignore
+.gitignore export-ignore
+.github/ export-ignore
+tests/ export-ignore
+docs/ export-ignore
+
+# Linguist overrides
+*.py linguist-language=Python
+*.ipynb linguist-language=Jupyter-Notebook
